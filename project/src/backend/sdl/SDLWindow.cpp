@@ -28,11 +28,11 @@ namespace lime {
 	SDL_Cursor* SDLCursor::waitCursor = 0;
 	SDL_Cursor* SDLCursor::waitArrowCursor = 0;
 
-	#if defined (IPHONE) || defined (APPLETV)
+	/*#if defined (IPHONE) || defined (APPLETV)
 	static bool displayModeSet = true;
-	#else
+	#else*/
 	static bool displayModeSet = false;
-	#endif
+	//#endif
 
 
 	SDLWindow::SDLWindow (Application* application, int width, int height, int flags, const char* title) {
