@@ -1055,7 +1055,6 @@ class NativeApplication
 	var DEVICE_ORIENTATION_CHANGE = 1;
 }
 
-
 #if android
 private class OrientationChangeListener #if !macro implements JNISafety #end
 {
