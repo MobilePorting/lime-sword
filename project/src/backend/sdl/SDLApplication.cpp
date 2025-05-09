@@ -910,6 +910,11 @@ namespace lime {
 		currentUpdate = getTime();
 
 		double dt = currentUpdate - lastUpdate;
+
+		double dtLimit = framePeriod * 4;
+		if (dt > dtLimit)
+			dt = dtLimit;
+		
 		nextUpdate += dt;
 
 		if(nextUpdate >= framePeriod) {
